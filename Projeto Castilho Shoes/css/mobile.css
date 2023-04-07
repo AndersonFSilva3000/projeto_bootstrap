@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #F3F3F3;
+}
+
+
+/* header */
+.header-container {
+  background-color: #d6d6d6;
+  padding: 1rem 0;
+}
+
+.logo-titulo {
+  font-family: 'Play', sans-serif;
+}
+
+.img-logo-header {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: .7em;
+}
+
+.img-logo-header__img-logoAdidas {
+  max-width: 40px;
+}
+
+.header-container__links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: .5em;
+}
+
+.header-container__link-1, .header-container__link-2 {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+.header-container__link:hover {
+  opacity: .5;
+}
+
+/* Sobre a loja */
+.sobre-a-loja {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.sobre-a-loja__img {
+  max-width: 65%;
+}
+
+.sobre-a-loja__titulo {
+  margin: 1em 0;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+  padding-bottom: .5em;
+  width: 100%;
+}
+
+.sobre-a-loja__conteudo {
+  padding: 0 3rem;
+}
+
+.sobre-a-loja__paragrafo {
+  text-align: justify;
+}
+
+
+/* Produtos */
+.container-main {
+  padding: 0 3rem;
+}
+
+
+.produtos {
+  text-align: center;
+  padding: .5rem;
+  border-bottom: 1px solid #000000;
+  margin: 1em 0;
+}
+
+.linha-nike, .linha-adidas {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.linha-nike__img, .linha-adidas__img {
+  max-width: 100%;
+}
+
+.linha-nike__titulo, .linha-adidas__titulo {
+  margin: .5em 0;
+  background: #ffffff;
+}
+
+.linha-nike__preco, .linha-adidas__preco {
+  margin-bottom: .5em;
+  background-color: #ffffff;
+}
+
+.linha-nike__texto, .linha-adidas__texto {
+  margin: .5em 0;
+  opacity: 0.5;
+  background-color: #ffffff;
+}
+
+.linha-nike__btn, .linha-adidas__btn {
+  width: 100%;
+  padding: .5em;
+  border-radius: .5em;
+  background-color: #d6d6d6;
+  font-weight: bolder;
+  color: #000000;
+  border: none;
+}
+
+.linha-nike__btn:hover, .linha-adidas__btn:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.linha-nike__titulo-principal, .linha-adidas__titulo-principal {
+  margin: 2em 0;
+}
+
+.linha-nike__descricao, .linha-adidas__descricao {
+  background: #ffffff;
+  padding: .5em;
+  border-radius: 0 0 .5em .5em;
+}
+
+.footer {
+  background-color: #d6d6d6;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 641px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+
+  .header-container__link-1 {
+    margin-right: 1em;
+  }
+
+  .linha-nike, .linha-adidas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-main {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+  }
+
+  .sobre-a-loja {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    align-items: start;
+    padding: 0 5rem;
+  }
+
+  .container-main {
+    padding: 0 5rem;
+    margin-top: 5rem;
+  }
+
+  .sobre-a-loja__conteudo {
+    margin-left: 2rem;
+  }
+
+  .sobre-a-loja__img {
+    max-width: 35%;
+  }
+
+
+  .linha-nike, .linha-adidas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
