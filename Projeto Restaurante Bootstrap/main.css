@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@400;600;700&display=swap');
+
+.font-personalisada {
+  font-family: 'Texturina', serif;
+}
+
+.navbar-toggler {
+  background-color: #F2CB05;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(165, 46, 3)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  background-color: rgb(165, 46, 3);
+}
+
+.navbar-brand,
+header .nav .nav-link,
+.navbar-brand:hover {
+  color: #F2CB05;
+}
+
+header .nav .nav-link.active {
+  background-color: #F2CB05;
+  color: #A62F03;
+}
+
+header .nav .nav-link.active:hover {
+  background-color: #f2cb05d0;
+}
+
+.cor-font-personalisada{
+  color: #A62F03;
+}
+
+#sobre-a-hamburgueria,
+#cardapio {
+  background-color: #d98b2b25;
+}
+
+#cardapio .nav .nav-link.active, 
+#faleConosco button {
+  background-color: #A62F03;
+  color: #F2CB05;
+}
+
+#cardapio .nav .nav-link.active:hover,
+#faleConosco button:hover {
+  background-color: #a62e03f5;
+  color: #f2cb05c2;
+}
+
+#cardapio .nav .nav-link:hover {
+  color: #A62F03;
+}
+
+.text {
+  text-align: justify;
+}
+
+.redes-sociais li {
+  list-style: none;
+  display: inline;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 762px) {
+  #eventos .text,
+  #cardapio .text {
+    margin-bottom: 2rem;
+  }
+
+  #cardapio aside {
+    margin-bottom: .5rem;
+  }
+
+  #faleConosco form {
+    margin-bottom: 3rem;
+  }
+}
